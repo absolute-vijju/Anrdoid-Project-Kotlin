@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "progressData": [
+    {
+      "title": "Front",
+      "before": "image_url",
+      "current": "image_url"
+    },
+    {
+      "title": "Side",
+      "before": "image_url",
+      "current": "image_url"
+    },
+    {
+      "title": "Back",
+      "before": "image_url",
+      "current": "image_url"
+    }
+  ]
+}

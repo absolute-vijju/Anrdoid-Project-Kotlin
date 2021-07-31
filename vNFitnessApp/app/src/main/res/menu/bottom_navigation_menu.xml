@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mWorkout"
+        android:icon="@drawable/ic_action_dumbbell"
+        android:title="@string/workouts" />
+    <item
+        android:id="@+id/mNutrition"
+        android:icon="@drawable/ic_action_dinner"
+        android:title="@string/nutrition" />
+    <item
+        android:id="@+id/mTips"
+        android:icon="@drawable/ic_action_chat"
+        android:title="@string/tips" />
+    <item
+        android:id="@+id/mProgress"
+        android:icon="@drawable/ic_action_decline_in_progress_chart"
+        android:title="@string/progress" />
+
+</menu>

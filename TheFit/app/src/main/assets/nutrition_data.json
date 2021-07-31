@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "nutritionData": [
+    {
+      "name": "My Nutrition"
+    },
+    {
+      "name": "Groceries"
+    },
+    {
+      "name": "Recipes"
+    },
+    {
+      "name": "My Collection"
+    }
+  ]
+}

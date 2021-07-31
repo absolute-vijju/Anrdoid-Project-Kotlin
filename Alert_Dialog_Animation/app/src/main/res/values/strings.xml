@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alert_Dialog_Animation</string>
+    <string name="click_me">Click Me</string>
+    <string name="yes">YES!</string>
+    <string name="working">Everything is working</string>
+    <string name="dismiss">Dissmiss</string>
+</resources>

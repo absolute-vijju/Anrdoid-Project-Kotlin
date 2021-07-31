@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/gradient_bottom_color</item>
+        <item name="colorPrimaryDark">@color/gradient_top_color</item>
+        <item name="colorAccent">@color/gradient_bottom_color</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="Bold" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="BoldItalic" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_bold_italic</item>
+    </style>
+
+    <style name="ExtraBold" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_extra_bold</item>
+    </style>
+
+    <style name="ExtraBoldItalic" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_extra_bold_italic</item>
+    </style>
+
+    <style name="SemiBold" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
+    <style name="SemiBoldItalic" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_semi_bold_italic</item>
+    </style>
+
+    <style name="Italic" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_italic</item>
+    </style>
+
+    <style name="Regular" parent="android:TextAppearance">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GoogleSignIn</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_successfully">Sign out successful</string>
+    <string name="welcome">Welcome</string>
+    <string name="failed_to_sign_in">Failed to Sign in</string>
+    <string name="lets_get_you_started">Let\'s get you started</string>
+    <string name="header_desc">We use your responses to personalize your meditation experience</string>
+    <string name="_continue">Continue</string>
+    <string name="choose_one_option_to_continue">Choose one option to continue</string>
+    <string name="submit">Submit</string>
+    <string name="fill_questionnaire">Fill the questionnaire</string>
+    <string name="delete_answer">Delete Answer</string>
+</resources>

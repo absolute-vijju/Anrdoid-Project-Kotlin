@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ImageCrop</string>
+    <string name="pick_from_gallery">Pick from Gallery</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="using_scissors">Using Scissors Library</string>
+    <string name="using_cropMe">Using CropMe</string>
+    <string name="using_photoCropper">Using PhotoCropper</string>
+    <string name="using_cropIwa">Using CropIwa</string>
+    <string name="using_simpleCropView">Using SimpleCropView</string>
+    <string name="using_androidImageCropper">Using Android Image Cropper</string>
+    <string name="using_cropperNoCropper">Using Cropper - NoCropper</string>
+    <string name="using_uCrop">"Using uCrop "</string>
+    <string name="crop_image">Crop Image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="done">Done</string>
+    <string name="imaged_saved">Image Saved</string>
+    <string name="no_bitmap_found">No bitmap found</string>
+    <string name="image_path">Image Path</string>
+    <string name="unknown_path">Unknown Path</string>
+    <string name="cropped_image">Cropped Image</string>
+    <string name="select_video_from">Select Video From</string>
+    <string name="load_from_asset">Load from assets</string>
+    <string name="load_from_url">Load from url</string>
+    <string name="image_activity">Image Activity</string>
+    <string name="video_activity">Video Activity</string>
+    <string name="image_cropping_activity">Image Cropping Activity</string>
+    <string name="using_video_view">Using Video View</string>
+    <string name="using_exo_player">Using Exo Player</string>
+
+
+</resources>

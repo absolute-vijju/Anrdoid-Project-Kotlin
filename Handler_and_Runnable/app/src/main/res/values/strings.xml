@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Handler_and_Runnable</string>
+    <string name="task_running">Task Running</string>
+    <string name="task_stopped">Task Stopped</string>
+    <string name="start_task">Start Task</string>
+    <string name="stop_task">Stop Task</string>
+</resources>
+

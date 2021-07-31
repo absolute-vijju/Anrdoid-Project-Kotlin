@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Internal and External Storage</string>
+    <string name="enter_file_name">Enter a file name</string>
+    <string name="enter_file_contents">File contents . . .</string>
+    <string name="save_file">Save File</string>
+    <string name="file_contents">File contents will show here . . .</string>
+    <string name="read_from_file">Read from file</string>
+    <string name="file_saved">File saved</string>
+    <string name="delete_file">Delete File</string>
+    <string name="image_saved">Image saved</string>
+    <string name="file_deleted">File deleted</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.WorkoutTypeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_50">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_64"
+            android:contentDescription="@string/app_name"
+            android:paddingStart="@dimen/dp_24"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@drawable/ic_action_arrow_back_ios"
+            android:tint="@color/back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWorkoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_24"
+            android:paddingEnd="@dimen/dp_24"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/back_arrow"
+            android:textSize="@dimen/sp_42"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTrainAtHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/border_train_at_home"
+            android:padding="@dimen/dp_12"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/medium_red_violet"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toEndOf="@+id/tvWorkoutName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvWorkoutName"
+            app:layout_constraintTop_toBottomOf="@+id/tvWorkoutName" />
+
+        <TextView
+            android:id="@+id/tvTrainAtGym"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/border_train_at_home"
+            android:padding="@dimen/dp_12"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/medium_red_violet"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toEndOf="@+id/tvTrainAtHome"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvTrainAtHome"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrainAtHome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

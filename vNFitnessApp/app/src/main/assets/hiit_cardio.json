@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "workoutData": [
+    {
+      "workoutName": "HIIT Cardio",
+      "exerciseData": [
+        {
+          "exerciseName": "CIRCUIT 1",
+          "data": [
+            {
+              "exercise": "KNEE TO SQUAT",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP SQUAT",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP LUNGE",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "BURPEES",
+              "round": "3",
+              "reps": "20"
+            }
+          ]
+        },
+        {
+          "exerciseName": "CIRCUIT 2",
+          "data": [
+            {
+              "exercise": "KNEE TO SQUAT",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP SQUAT",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "JUMP LUNGE",
+              "round": "3",
+              "reps": "20"
+            },
+            {
+              "exercise": "BURPEES",
+              "round": "3",
+              "reps": "20"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

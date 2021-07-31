@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vPinkBg"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_180"
+        android:background="@drawable/pink_gradient_dark_to_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/progress"
+        android:textAppearance="@style/Bold"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_24"
+        app:layout_constraintBottom_toBottomOf="@id/vPinkBg"
+        app:layout_constraintEnd_toEndOf="@id/vPinkBg"
+        app:layout_constraintStart_toStartOf="@id/vPinkBg"
+        app:layout_constraintTop_toTopOf="@id/vPinkBg" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_64"
+        android:background="@color/whisper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vPinkBg" />
+
+    <TextView
+        android:id="@+id/tvMeasurementsAndGoals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_48"
+        android:background="@drawable/bg_training_btn"
+        android:padding="@dimen/dp_12"
+        android:text="@string/measurements_and_goal"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Bold"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.StepThreeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvStepThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_64"
+            android:text="@string/step_3"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/step_heading"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStepThreeDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@string/step_3_desc"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/step_heading_desc"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStepThree" />
+
+        <LinearLayout
+            android:id="@+id/llLooseBodyFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/border_pink"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStepThreeDesc">
+
+            <TextView
+                android:id="@+id/tvLooseBodyFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loose_body_fat"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tvLooseBodyFatDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/loose_body_fat_desc"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGainMuscle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/border_pink"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llLooseBodyFat">
+
+            <TextView
+                android:id="@+id/tvGainMuscle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gain_muscle"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tvGainMuscleDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/gain_muscle_desc"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMaintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/border_pink"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llGainMuscle">
+
+            <TextView
+                android:id="@+id/tvMaintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/both_maintain"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tvMaintainDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/both_maintain_desc"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/step_heading_desc"
+                android:textSize="@dimen/sp_16" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_marginBottom="@dimen/dp_48"
+            android:background="@drawable/bg_btn"
+            android:paddingStart="@dimen/dp_64"
+            android:paddingEnd="@dimen/dp_64"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Regular"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llMaintain"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

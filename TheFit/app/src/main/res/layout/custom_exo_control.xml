@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivExpand"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/bg_gray"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_24"
+        android:paddingBottom="@dimen/dp_8"
+        android:src="@drawable/ic_action_expand" />
+
+    <ImageView
+        android:id="@+id/ivSound"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/bg_gray"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_24"
+        android:paddingBottom="@dimen/dp_8"
+        android:src="@drawable/ic_action_volume" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:background="@drawable/bg_gray">
+
+        <RelativeLayout
+            android:id="@+id/rlPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8">
+
+            <ImageView
+                android:id="@+id/exo_play"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/bg_gray"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_action_play_arrow" />
+
+            <ImageView
+                android:id="@+id/exo_pause"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/dp_4"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_action_pause" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_toEndOf="@id/rlPlayPause"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@+id/exo_progress"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/exo_duration"
+            android:layout_toEndOf="@id/exo_position"
+            app:buffered_color="@color/buffered_color"
+            app:played_color="@color/played_color"
+            app:scrubber_color="@color/white"
+            app:scrubber_disabled_size="@dimen/dp_64"
+            app:scrubber_dragged_size="@dimen/dp_64"
+            app:scrubber_drawable="@drawable/exo_thumb"
+            app:scrubber_enabled_size="@dimen/dp_64"
+            app:unplayed_color="@color/unplayed_color" />
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_toStartOf="@id/ivTv"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/ivTv"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:padding="@dimen/dp_1"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:contentDescription="@string/app_name"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/ic_action_airplay" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

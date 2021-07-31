@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="step_heading">#D99BA8</color>
+    <color name="dove_gray">#707070</color>
+    <color name="step_heading_desc">#555555</color>
+    <color name="wild_sand">#F6F5F5</color>
+    <color name="beauty_bush">#EDCAC4</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="back_arrow">#545454</color>
+    <color name="border_train_at_home">#EFA0AC</color>
+    <color name="medium_red_violet">#CB347A</color>
+    <color name="profile_gradient_start">#EE9FAC</color>
+    <color name="profile_gradient_end">#F9C7C3</color>
+    <color name="item_training">#FCE6E3</color>
+    <color name="sea_pink">#ED9CAA</color>
+    <color name="scorpion">#636061</color>
+    <color name="carousel_pink">#FDF5F7</color>
+    <color name="bg_macros_summary">#FFE6E4</color>
+    <color name="bg_macros_summary_border">@color/sea_pink</color>
+    <color name="bg_grocery_title">#D14987</color>
+    <color name="meal_1_start">#F0A9B3</color>
+    <color name="meal_1_end">#F9CCC7</color>
+    <color name="meal_2_start">#F1B3BD</color>
+    <color name="meal_2_end">#F9D0CD</color>
+    <color name="meal_3_start">#F5BDC6</color>
+    <color name="meal_3_end">#F9D4D2</color>
+    <color name="meal_4_start">#F5C8CE</color>
+    <color name="meal_4_end">#F9DAD8</color>
+    <color name="tab_default">#DFDFDF</color>
+    <color name="tab_selected">@color/medium_red_violet</color>
+    <color name="dusty_gray">#9A9A9A</color>
+    <color name="silver_chalice">#AFAAAA</color>
+    <color name="whisper">#F7F7FB</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

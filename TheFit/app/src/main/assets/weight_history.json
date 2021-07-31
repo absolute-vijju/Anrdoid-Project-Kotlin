@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "weightHistoryData": [
+    {
+      "date": "27 May",
+      "weight": "60.0kg"
+    },
+    {
+      "date": "22 May",
+      "weight": "120.0kg"
+    },
+    {
+      "date": "1 Apr",
+      "weight": "51.5kg"
+    },
+    {
+      "date": "20 Mar",
+      "weight": "51.3kg"
+    },
+    {
+      "date": "9 Mar",
+      "weight": "51.5kg"
+    },
+    {
+      "date": "5 Mar",
+      "weight": "50.0kg"
+    }
+  ]
+}

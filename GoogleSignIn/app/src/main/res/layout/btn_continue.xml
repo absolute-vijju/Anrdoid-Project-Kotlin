@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@drawable/bg_btn_continue"
+        android:text="@string/_continue"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:visibility="visible" />
+
+</LinearLayout>

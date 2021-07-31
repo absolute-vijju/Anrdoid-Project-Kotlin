@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="gradient_bottom_color">#00B1D5</color>
+    <color name="gradient_top_color">#007AB8</color>
+
+    <color name="cerulean">#00B4D8</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+</resources>

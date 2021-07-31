@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "profileData": [
+    {
+      "title": "Alex Lupo",
+      "desc": "image_url"
+    },
+    {
+      "title": "Email address",
+      "desc": "alex.lupo@gmail.com"
+    },
+    {
+      "title": "Help & Support",
+      "desc": "Get in touch with us"
+    },
+    {
+      "title": "Terms & Conditions",
+      "desc": "For using the app"
+    },
+    {
+      "title": "Privacy Policy",
+      "desc": "Know our data policy"
+    },
+    {
+      "title": "Sign out",
+      "desc": "Log off your account"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "mealSummary": [
+    {
+      "mealName": "Meal 1",
+      "desc": "Protein + Carbs"
+    },
+    {
+      "mealName": "Meal 2",
+      "desc": "Protein + Veggies + Fats"
+    },
+    {
+      "mealName": "Meal 3",
+      "desc": "Protein + Carbs + Fats"
+    },
+    {
+      "mealName": "Meal 4",
+      "desc": "Carbs + Protein"
+    },
+    {
+      "mealName": "Note",
+      "desc": "Protein should be 6 oz\nCarbs should be 11/2-2 cups\nFats should be a the size of your palm\n\nVeggies are unlimited - coocked with sale, pepper and any sodium free seasoning"
+    }
+  ]
+}

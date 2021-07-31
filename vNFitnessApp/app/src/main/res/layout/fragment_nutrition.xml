@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.NutritionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header" />
+
+        <TextView
+            android:id="@+id/tvMacrosSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:text="@string/macros_summary"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/back_arrow"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <LinearLayout
+            android:id="@+id/llTargetCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/bg_macros_summary"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_12"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMacrosSummary">
+
+            <TextView
+                android:id="@+id/tvTargetCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/target_calories"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvTargetCaloriesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/target_calories_count"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProteins"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/bg_macros_summary"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_12"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llTargetCalories">
+
+            <TextView
+                android:id="@+id/tvProteins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proteins"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvProteinsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/proteins_count"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCarbohyrates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/bg_macros_summary"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_12"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llProteins">
+
+            <TextView
+                android:id="@+id/tvCarboHydrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/carbohydrates"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvCarboHydratesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/carbohydrates_count"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/bg_macros_summary"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_12"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCarbohyrates">
+
+            <TextView
+                android:id="@+id/tvFats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fats"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvFatsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fats_count"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/back_arrow"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNutritionInformation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:text="@string/nutrition_information"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/back_arrow"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llFats" />
+
+        <TextView
+            android:id="@+id/tvStructuringYourMeals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/border_sea_pink"
+            android:padding="@dimen/dp_12"
+            android:text="@string/structuring_your_meals"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/sea_pink"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNutritionInformation" />
+
+        <TextView
+            android:id="@+id/tvGrocerryList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:background="@drawable/border_sea_pink"
+            android:padding="@dimen/dp_12"
+            android:text="@string/grocery_list"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/sea_pink"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStructuringYourMeals" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_nutrition_transparent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

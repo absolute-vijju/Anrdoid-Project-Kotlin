@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveData_ViewModel</string>
+    <string name="generate_random_number">Generate Random Number</string>
+    <string name="click_on_button_to_create_random_number">Click on below button to generate random number</string>
+</resources>

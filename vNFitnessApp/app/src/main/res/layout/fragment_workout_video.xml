@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".fragments.WorkoutVideoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_64"
+            android:contentDescription="@string/app_name"
+            android:paddingStart="@dimen/dp_24"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@drawable/ic_action_arrow_back_ios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/back_arrow" />
+
+        <VideoView
+            android:id="@+id/vvExercise"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_400"
+            android:layout_marginTop="@dimen/dp_16"
+            android:src="@drawable/profile_pic"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+        <ImageView
+            android:id="@+id/ivThumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/workout_preview"
+            app:layout_constraintBottom_toBottomOf="@id/vvExercise"
+            app:layout_constraintEnd_toEndOf="@id/vvExercise"
+            app:layout_constraintStart_toStartOf="@id/vvExercise"
+            app:layout_constraintTop_toTopOf="@id/vvExercise" />
+
+        <TextView
+            android:id="@+id/tvRound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/back_arrow"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vvExercise" />
+
+        <TextView
+            android:id="@+id/tvExerciseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Regular"
+            android:textColor="@color/back_arrow"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRound" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/sea_pink"
+            android:textSize="@dimen/sp_36"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvExerciseName" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginEnd="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_48"
+            android:background="@drawable/gradient_workout_video"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTimer"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_goneMarginBottom="@dimen/dp_48" />
+
+        <ImageView
+            android:id="@+id/ivPlayContainer"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:contentDescription="@string/app_name"
+            android:scaleX="1.8"
+            android:scaleY="1.8"
+            android:src="@drawable/border_sea_pink_round_dp_2"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:contentDescription="@string/app_name"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_action_pause"
+            android:tag="@string/pause"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPlayContainer"
+            app:layout_constraintEnd_toEndOf="@+id/ivPlayContainer"
+            app:layout_constraintStart_toStartOf="@+id/ivPlayContainer"
+            app:layout_constraintTop_toTopOf="@+id/ivPlayContainer"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="@color/sea_pink" />
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/start"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/sea_pink"
+            android:textSize="@dimen/sp_18"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPlayContainer"
+            app:layout_constraintEnd_toEndOf="@+id/ivPlayContainer"
+            app:layout_constraintStart_toStartOf="@+id/ivPlayContainer"
+            app:layout_constraintTop_toBottomOf="@+id/ivPlay" />
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/scorpion"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayContainer"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/tvExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Bold"
+            android:textColor="@color/scorpion"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@id/ivPlayContainer"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNextExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_48"
+            android:background="@color/carousel_pink"
+            android:padding="@dimen/dp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view">
+
+            <ImageView
+                android:id="@+id/ivWorkout"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/workout_preview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvComingUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_12"
+                android:text="@string/coming_up"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Regular"
+                android:textColor="@color/scorpion"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivWorkout"
+                app:layout_constraintTop_toTopOf="@+id/ivWorkout" />
+
+            <TextView
+                android:id="@+id/tvNextExercise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_12"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Bold"
+                android:textColor="@color/scorpion"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/ivWorkout"
+                app:layout_constraintTop_toBottomOf="@+id/tvComingUp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

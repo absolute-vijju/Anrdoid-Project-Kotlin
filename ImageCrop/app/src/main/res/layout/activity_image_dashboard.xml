@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ImageDashboardActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/crop_image"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textSize="@dimen/sp_20" />
+
+    <Button
+        android:id="@+id/btnScissorsLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_scissors"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCropMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_cropMe"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCropIwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_cropIwa"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSimpleCropView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_simpleCropView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnAndroidImageCropper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_androidImageCropper"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCropperNoCropper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_weight="1"
+        android:text="@string/using_cropperNoCropper"
+        android:textAllCaps="false" />
+
+</LinearLayout>

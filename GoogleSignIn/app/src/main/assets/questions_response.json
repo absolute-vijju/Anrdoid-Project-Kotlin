@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "questionData": [
+    {
+      "question": "How often do you meditate?",
+      "optionData": [
+        {
+          "option": "Daily"
+        },
+        {
+          "option": "Once or twice a week"
+        },
+        {
+          "option": "No fixed schedule"
+        },
+        {
+          "option": "I am new to meditation"
+        }
+      ]
+    },
+    {
+      "question": "Question 2",
+      "optionData": [
+        {
+          "option": "Option 1"
+        },
+        {
+          "option": "Option 2"
+        }
+      ]
+    },
+    {
+      "question": "Question 3",
+      "optionData": [
+        {
+          "option": "Option 1"
+        },
+        {
+          "option": "Option 2"
+        },
+        {
+          "option": "Option 3"
+        }
+      ]
+    },
+    {
+      "question": "Question 4",
+      "optionData": [
+        {
+          "option": "Option 1"
+        },
+        {
+          "option": "Option 2"
+        },
+        {
+          "option": "Option 3"
+        },
+        {
+          "option": "Option 4"
+        }
+      ]
+    },
+    {
+      "question": "Question 5",
+      "optionData": [
+        {
+          "option": "Option 1"
+        },
+        {
+          "option": "Option 2"
+        },
+        {
+          "option": "Option 3"
+        },
+        {
+          "option": "Option 4"
+        },
+        {
+          "option": "Option 5"
+        }
+      ]
+    }
+  ]
+}

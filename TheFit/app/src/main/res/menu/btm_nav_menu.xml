@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miCalender"
+        android:icon="@drawable/calendar_selector"
+        android:title="@string/Calender" />
+
+    <item
+        android:id="@+id/miTraining"
+        android:icon="@drawable/training_selector"
+        android:title="@string/Training" />
+
+    <item
+        android:id="@+id/miNutrition"
+        android:icon="@drawable/meal_selector"
+        android:title="@string/Nutrition" />
+
+    <item
+        android:id="@+id/miHeart"
+        android:icon="@drawable/heart_selector"
+        android:title="@string/Heart" />
+
+    <item
+        android:id="@+id/miInfo"
+        android:icon="@drawable/info_selector"
+        android:title="@string/Info" />
+
+</menu>

@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "groceryList": [
+    {
+      "name": "Carbs",
+      "items": [
+        {
+          "itemName": "Oatmeal(Oats)"
+        },
+        {
+          "itemName": "Whole Grains"
+        },
+        {
+          "itemName": "Whole Wheat Pastas"
+        },
+        {
+          "itemName": "Broccoli"
+        }
+      ]
+    },
+    {
+      "name": "Protein",
+      "items": [
+        {
+          "itemName": "Turkey Bacon"
+        },
+        {
+          "itemName": "Salmon"
+        },
+        {
+          "itemName": "Chicken Breast"
+        },
+        {
+          "itemName": "Lean Ground Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Fats",
+      "items": [
+        {
+          "itemName": "Avocado Oil"
+        },
+        {
+          "itemName": "Avocado"
+        },
+        {
+          "itemName": "Chicken Breast"
+        },
+        {
+          "itemName": "Broccoli"
+        }
+      ]
+    }
+  ]
+}

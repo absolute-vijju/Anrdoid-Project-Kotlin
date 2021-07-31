@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImageUpload_Firebase</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="image_uploaded">Image Uploaded</string>
+    <string name="failed_to_upload">Failed to upload image</string>
+    <string name="picK_image">Pick Image</string>
+</resources>

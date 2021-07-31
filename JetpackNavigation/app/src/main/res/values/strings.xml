@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jetpack Navigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go">Go</string>
+    <string name="go_to_second_screen">Go to second screen</string>
+    <string name="next">Next</string>
+</resources>

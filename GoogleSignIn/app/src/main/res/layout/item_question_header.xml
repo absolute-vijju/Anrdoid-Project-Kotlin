@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_header">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline40Dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp_40" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80"
+        android:gravity="center_horizontal"
+        android:text="@string/lets_get_you_started"
+        android:textAppearance="@style/Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline40Dp"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline40Dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:gravity="center_horizontal"
+        android:text="@string/header_desc"
+        android:textAppearance="@style/Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline40Dp"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline40Dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline40Dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp_40" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

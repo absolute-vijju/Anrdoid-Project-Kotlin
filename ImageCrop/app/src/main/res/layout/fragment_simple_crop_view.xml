@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SimpleCropViewFragment">
+
+    <com.isseiaoki.simplecropview.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cropView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/ivRotateClockWise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:scv_animation_duration="500"
+        custom:scv_animation_enabled="true"
+        custom:scv_background_color="@android:color/darker_gray"
+        custom:scv_frame_color="@color/colorAccent"
+        custom:scv_frame_stroke_weight="@dimen/dp_1"
+        custom:scv_handle_color="@color/colorAccent"
+        custom:scv_handle_size="@dimen/dp_8"
+        custom:scv_overlay_color="@color/black_50"
+        custom:scv_touch_padding="@dimen/dp_8" />
+
+
+    <ImageView
+        android:id="@+id/ivRotateClockWise"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_action_rotate_right"
+        android:tint="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRotateCounterClockWise" />
+
+    <ImageView
+        android:id="@+id/ivRotateCounterClockWise"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/crop_image_menu_rotate_left"
+        android:tint="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenGallery"
+        app:layout_constraintEnd_toStartOf="@+id/ivRotateClockWise"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenGallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="@string/pick_from_gallery"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOpenCamera"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="@string/open_camera"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOpenGallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

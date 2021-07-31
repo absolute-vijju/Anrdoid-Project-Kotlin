@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "trainingData": [
+    {
+      "name": "My Program"
+    },
+    {
+      "name": "Core"
+    },
+    {
+      "name": "Functional"
+    },
+    {
+      "name": "Warm Up"
+    },
+    {
+      "name": "Booty Band"
+    },
+    {
+      "name": "Glossary"
+    }
+  ]
+}
