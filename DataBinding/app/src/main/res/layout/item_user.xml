@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="User"
+            type="com.developer.vijay.databinding.User" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvFirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{User.firstname}"
+            android:textSize="30sp"
+            tools:text="John" />
+
+        <TextView
+            android:id="@+id/tvLastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@{User.lastname}"
+            android:textSize="20sp"
+            tools:text="Doe" />
+
+    </LinearLayout>
+
+</layout>
